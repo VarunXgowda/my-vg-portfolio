@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Achievements — Varun Gowda</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">VG</div>
+      <div class="brand-text">
+        <div class="name">Varun Gowda</div>
+        <div class="sub">AI &amp; Data Science • Aspiring Entrepreneur</div>
+      </div>
+    </div>
+
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="achievements.html" class="active">Achievements</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap achievements-wrap">
+
+      <!-- Page heading + short intro -->
+      <section class="ach-header">
+        <h1>Achievements</h1>
+        <p class="lead">Below are the professional certificates and courses I've completed to strengthen web &amp; AI skills. Each card includes a short summary of what I learned. Use <strong>Preview</strong> to view in the page (if supported) or <strong>Download</strong> to save a copy.</p>
+      </section>
+
+      <!-- Sports separate -->
+      <section class="sports card">
+        <h2>Sports & Competitions</h2>
+        <ul>
+          <li>Participated in 7 national-level swimming competitions</li>
+          <li>National Bronze medal — 400 metre medley relay</li>
+        </ul>
+      </section>
+
+      <!-- Controls -->
+      <section class="cert-controls">
+        <div class="filter-group">
+          <span class="filter-label">Filter:</span>
+          <select id="cert-filter" class="filter-select">
+            <option value="all">All</option>
+            <option value="course">Course</option>
+            <option value="certificate">Certificate</option>
+            <option value="workshop">Workshop</option>
+          </select>
+        </div>
+
+        <div class="search-group">
+          <input id="certSearch" type="text" class="search-input" placeholder="Search title or issuer" aria-label="Search certificates">
+        </div>
+      </section>
+
+      <!-- Certificates grid: each card uses a data-doc attribute pointing to an uploaded file path -->
+      <section class="cert-grid" id="certGrid">
+
+        <!-- HTML5 - CORRECTED STRUCTURE -->
+        <article class="cert-card" data-type="certificate" data-title="HTML5">
+          <div class="cert-header">
+            <div class="cert-main">
+              <h3>HTML5 — The Language - Certificate</h3>
+              <div class="cert-meta">
+                <span class="cert-issuer">Infosys | Springboard</span>
+                <span class="cert-type">Certificate</span>
+                <span class="cert-date">2025-09-26</span>
+              </div>
+            </div>
+          </div>
+          <p class="cert-desc">Learned semantic HTML5 structure, accessibility guidelines, responsive layout techniques and SEO-friendly markup.</p>
+          <div class="cert-actions">
+            <button class="cert-preview" data-doc="certificates/html5-certificate.pdf">Preview</button>
+            <a class="cert-download" href="certificates/html5-certificate.pdf" download>Download</a>
+          </div>
+        </article>
+
+        <!-- JavaScript - CORRECTED STRUCTURE -->
+        <article class="cert-card" data-type="course" data-title="JavaScript">
+          <div class="cert-header">
+            <div class="cert-main">
+              <h3>JavaScript Course</h3>
+              <div class="cert-meta">
+                <span class="cert-issuer">Self-paced</span>
+                <span class="cert-type">Course</span>
+                <span class="cert-date">2025-09-26</span>
+              </div>
+            </div>
+          </div>
+          <p class="cert-desc">DOM manipulation, event handling, ES6+ features, promises, async/await and dynamic UI building.</p>
+          <div class="cert-actions">
+            <button class="cert-preview" data-doc="certificates/javascript-course.pdf">Preview</button>
+            <a class="cert-download" href="certificates/javascript-course.pdf" download>Download</a>
+          </div>
+        </article>
+
+        <!-- CSS3 - CORRECTED STRUCTURE -->
+        <article class="cert-card" data-type="course" data-title="CSS3">
+          <div class="cert-header">
+            <div class="cert-main">
+              <h3>CSS3 - Course</h3>
+              <div class="cert-meta">
+                <span class="cert-issuer">Infosys | Springboard</span>
+                <span class="cert-type">Course</span>
+                <span class="cert-date">2025-09-26</span>
+              </div>
+            </div>
+          </div>
+          <p class="cert-desc">Flexbox, Grid, responsive media queries, animations and styling best practices for modern layouts.</p>
+          <div class="cert-actions">
+            <button class="cert-preview" data-doc="certificates/css3-course.pdf">Preview</button>
+            <a class="cert-download" href="certificates/css3-course.pdf" download>Download</a>
+          </div>
+        </article>
+
+        <!-- IBM AI - CORRECTED STRUCTURE -->
+        <article class="cert-card" data-type="certificate" data-title="Getting Started with AI">
+          <div class="cert-header">
+            <div class="cert-main">
+              <h3>Getting Started with AI - Certificate</h3>
+              <div class="cert-meta">
+                <span class="cert-issuer">IBM SkillsBuild</span>
+                <span class="cert-type">Certificate</span>
+                <span class="cert-date">2024-10-15</span>
+              </div>
+            </div>
+          </div>
+          <p class="cert-desc">AI fundamentals: supervised vs unsupervised learning, neural network basics, and real-world AI applications.</p>
+          <div class="cert-actions">
+            <button class="cert-preview" data-doc="certificates/ibm-ai-certificate.pdf">Preview</button>
+            <a class="cert-download" href="certificates/ibm-ai-certificate.pdf" download>Download</a>
+          </div>
+        </article>
+
+        <!-- Front-End Web Dev - CORRECTED STRUCTURE -->
+        <article class="cert-card" data-type="certificate" data-title="Front End Web Developer">
+          <div class="cert-header">
+            <div class="cert-main">
+              <h3>Front End Web Developer - Certificate</h3>
+              <div class="cert-meta">
+                <span class="cert-issuer">Infosys | Springboard</span>
+                <span class="cert-type">Certificate</span>
+                <span class="cert-date">2025-09-26</span>
+              </div>
+            </div>
+          </div>
+          <p class="cert-desc">Comprehensive frontend foundations—HTML, CSS, JavaScript, responsive design and UI best practices.</p>
+          <div class="cert-actions">
+            <button class="cert-preview" data-doc="certificates/frontend-certificate.pdf">Preview</button>
+            <a class="cert-download" href="certificates/frontend-certificate.pdf" download>Download</a>
+          </div>
+        </article>
+
+        <!-- Mastering Full Stack - CORRECTED STRUCTURE -->
+        <article class="cert-card featured" data-type="workshop" data-title="Mastering Full Stack">
+          <div class="cert-header">
+            <div class="cert-main">
+              <h3>Mastering Full Stack (MERN)</h3>
+              <div class="cert-meta">
+                <span class="cert-issuer">Global Academy of Technology</span>
+                <span class="cert-type">Workshop</span>
+                <span class="cert-date">2025-11-07</span>
+              </div>
+            </div>
+          </div>
+          <p class="cert-desc">5-day hands-on program covering MongoDB, Express, React and Node — built a small MERN app and learned deployment basics.</p>
+          <div class="cert-actions">
+            <button class="cert-preview" data-doc="certificates/fullstack-workshop.pdf">Preview</button>
+            <a class="cert-download" href="certificates/fullstack-workshop.pdf" download>Download</a>
+          </div>
+        </article>
+
+      </section>
+    </div>
+  </main>
+
+  <footer>© <span id="year"></span> Varun Gowda</footer>
+
+  <!-- Modal preview (shared) -->
+  <div id="docModal" class="doc-modal" aria-hidden="true" role="dialog">
+    <div class="doc-modal-inner">
+      <button class="doc-close" aria-label="Close preview">✕</button>
+      <iframe id="docFrame" src="" frameborder="0" title="Document preview"></iframe>
+      <div class="doc-actions-modal">
+        <a id="docOpen" class="btn-outline" href="#" target="_blank" rel="noopener">Open in new tab</a>
+        <a id="docDownload" class="btn-primary" href="#" download>Download</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Document preview modal logic
+    (function(){
+      const modal = document.getElementById('docModal');
+      const frame = document.getElementById('docFrame');
+      const closeBtn = modal.querySelector('.doc-close');
+      const openLink = document.getElementById('docOpen');
+      const downloadLink = document.getElementById('docDownload');
+
+      function openDoc(url){
+        frame.src = url;
+        openLink.href = url;
+        downloadLink.href = url;
+        modal.classList.add('visible');
+        document.body.style.overflow = 'hidden';
+      }
+      
+      function closeDoc(){
+        modal.classList.remove('visible');
+        frame.src = '';
+        document.body.style.overflow = '';
+      }
+
+      document.querySelectorAll('.cert-preview').forEach(btn=>{
+        btn.addEventListener('click', e=>{
+          const url = btn.getAttribute('data-doc');
+          openDoc(url);
+        });
+      });
+
+      closeBtn.addEventListener('click', closeDoc);
+      modal.addEventListener('click', (e)=> { 
+        if (e.target === modal) closeDoc(); 
+      });
+
+      document.addEventListener('keydown', (e)=>{ 
+        if (e.key === 'Escape') closeDoc(); 
+      });
+    })();
+
+    // Filter and search functionality
+    (function(){
+      const grid = document.getElementById('certGrid');
+      const cards = grid ? Array.from(grid.querySelectorAll('.cert-card')) : [];
+      const filter = document.getElementById('cert-filter');
+      const search = document.getElementById('certSearch');
+
+      function applyFilters(){
+        const f = filter.value;
+        const q = (search.value||'').trim().toLowerCase();
+        cards.forEach(c => {
+          const type = c.getAttribute('data-type');
+          const title = (c.getAttribute('data-title')||'').toLowerCase();
+          const desc = (c.querySelector('.cert-desc')?.textContent||'').toLowerCase();
+          const issuer = (c.querySelector('.cert-issuer')?.textContent||'').toLowerCase();
+          
+          const matchesType = (f === 'all') ? true : (type === f);
+          const matchesQuery = q === '' ? true : 
+            (title.includes(q) || desc.includes(q) || issuer.includes(q));
+          
+          c.style.display = (matchesType && matchesQuery) ? '' : 'none';
+        });
+      }
+
+      if (filter) filter.addEventListener('change', applyFilters);
+      if (search) search.addEventListener('input', applyFilters);
+    })();
+  </script>
+</body>
+</html>

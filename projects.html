@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Projects — Varun Gowda</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">VG</div>
+      <div class="brand-text">
+        <div class="name">Varun Gowda</div>
+        <div class="sub">AI & Data Science • Aspiring Entrepreneur</div>
+      </div>
+    </div>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap projects-wrap">
+      <!-- Page Header -->
+      <section class="projects-header">
+        <h1>Projects</h1>
+        <p class="lead">Showcasing my work in AI, Data Science, and practical problem-solving through real-world applications and innovative solutions.</p>
+      </section>
+
+      <!-- K.G.F. Project -->
+      <article class="project-card featured">
+        <div class="project-badge">Featured Project</div>
+        
+        <div class="project-header">
+          <h2>Kaizen Geo-Metallurgical Framework (K.G.F.)</h2>
+          <div class="project-meta">
+            <span class="project-category">AI & Industrial Automation</span>
+            <span class="project-date">2024</span>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-description">
+            <p>A predictive soft sensor system that transforms iron ore flotation control from reactive to proactive using machine learning. The framework enables continuous process optimization by predicting silica content with high accuracy 30-60 minutes in advance.</p>
+            
+            <div class="project-highlights">
+              <h3>Key Achievements</h3>
+              <ul>
+                <li>Developed CatBoost Regressor model with R² score of 0.7399 and RMSE of 0.4969%</li>
+                <li>Enabled 30-60 minute predictive lead time for process optimization</li>
+                <li>Identified critical features like Starch-to-Pulp ratio as key drivers</li>
+                <li>Built resilient system with minimal performance degradation on volatile data</li>
+              </ul>
+            </div>
+
+            <div class="tech-stack">
+              <h3>Technology Stack</h3>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">CatBoost</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">Time Series Analysis</span>
+                <span class="tech-tag">Feature Engineering</span>
+                <span class="tech-tag">Industrial IoT</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-stats">
+            <div class="stat-card">
+              <div class="stat-value">0.7399</div>
+              <div class="stat-label">R² Score</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">0.4969%</div>
+              <div class="stat-label">RMSE</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">30-60 min</div>
+              <div class="stat-label">Lead Time</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">Proactive</div>
+              <div class="stat-label">Control Paradigm</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-actions">
+          <a href="https://github.com/YOGITH-D/KGF" class="btn-primary" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            View on GitHub
+          </a>
+          <button class="btn-outline project-details-btn">Project Details</button>
+        </div>
+      </article>
+
+      <!-- Coming Soon Section -->
+      <section class="coming-soon">
+        <h2>More Projects Coming Soon</h2>
+        <p>I'm continuously working on new projects in AI, data science, and web development. Check back later for more exciting work!</p>
+        <div class="upcoming-tags">
+          <span class="upcoming-tag">Deep Learning</span>
+          <span class="upcoming-tag">Computer Vision</span>
+          <span class="upcoming-tag">Web Applications</span>
+          <span class="upcoming-tag">Data Analytics</span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Varun Gowda
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Project details interaction
+    document.querySelector('.project-details-btn')?.addEventListener('click', function() {
+      const description = document.querySelector('.project-description');
+      description.classList.toggle('expanded');
+      this.textContent = description.classList.contains('expanded') ? 'Show Less' : 'Project Details';
+    });
+  </script>
+</body>
+</html>

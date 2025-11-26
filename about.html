@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Varun Gowda</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">VG</div>
+      <div class="brand-text">
+        <div class="name">Varun Gowda</div>
+        <div class="sub">AI &amp; Data Science • Aspiring Entrepreneur</div>
+      </div>
+    </div>
+
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap about-wrap">
+      <!-- About Me Section -->
+      <section class="about-me">
+        <h1>About Me</h1>
+        <p class="intro">
+          I'm Varun Gowda — currently studying Artificial Intelligence &amp; Data Science. I aim to become an entrepreneur and build practical solutions using data. I enjoy solving problems, working with teams, and learning new technologies to help create impact.
+        </p>
+      </section>
+
+      <!-- My Strengths Section -->
+      <section class="my-strengths">
+        <h2>My Strengths</h2>
+        <ul>
+          <li>Resilient and disciplined — I adapt quickly to new environments.</li>
+          <li>Strong problem-solver with analytical thinking.</li>
+          <li>Quick learner and self-driven — I take ownership and follow through on goals.</li>
+          <li>Good communicator and team player — I collaborate well and contribute ideas.</li>
+        </ul>
+      </section>
+
+      <!-- Education Section -->
+      <!-- Education Section -->
+<section class="education">
+  <h2>Education</h2>
+
+  <div class="edu-item">
+    <h3>Holy Child Convent</h3>
+    <div class="meta">Nursery — Grade 6 • 2010–2018</div>
+    <p>Foundational schooling that built strong basics in academics and discipline.</p>
+    <!-- Buttons removed -->
+  </div>
+
+  <div class="edu-item">
+    <h3>Mahila Seva Samaja (MSS)</h3>
+    <div class="meta">Grade 7 — Grade 10 (State board) • 2018–2021</div>
+    <p><strong>10th board score:</strong> 85.76%.</p>
+    <!-- Buttons removed -->
+  </div>
+
+  <div class="edu-item">
+    <h3>Kumarans PU College</h3>
+    <div class="meta">1st & 2nd PUC • 2021–2023</div>
+    <p><strong>PUC score:</strong> 84.33%.</p>
+    <!-- Buttons removed -->
+  </div>
+</section>
+
+
+      <!-- Hobbies Section -->
+      <section class="hobbies">
+        <h2>My Hobbies</h2>
+        <ul>
+          <li>Gym — regular workouts to stay fit and focused.</li>
+          <li>Swimming — participated in national-level competitions; teamwork and endurance training.</li>
+          <li>Cricket — love the game for strategy, teamwork, and fun.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+<!-- Modal preview (shared) - ADD THIS TO YOUR ABOUT PAGE -->
+  <div id="docModal" class="doc-modal" aria-hidden="true" role="dialog">
+    <div class="doc-modal-inner">
+      <button class="doc-close" aria-label="Close preview">✕</button>
+      <iframe id="docFrame" src="" frameborder="0" title="Document preview"></iframe>
+      <div class="doc-actions-modal">
+        <a id="docOpen" class="btn-outline" href="#" target="_blank" rel="noopener">Open in new tab</a>
+        <a id="docDownload" class="btn-primary" href="#" download>Download</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Document preview modal logic
+    (function(){
+      const modal = document.getElementById('docModal');
+      const frame = document.getElementById('docFrame');
+      const closeBtn = modal.querySelector('.doc-close');
+      const openLink = document.getElementById('docOpen');
+      const downloadLink = document.getElementById('docDownload');
+
+      function openDoc(url){
+        frame.src = url;
+        openLink.href = url;
+        downloadLink.href = url;
+        modal.classList.add('visible');
+        document.body.style.overflow = 'hidden';
+      }
+      
+      function closeDoc(){
+        modal.classList.remove('visible');
+        frame.src = '';
+        document.body.style.overflow = '';
+      }
+
+      document.querySelectorAll('.doc-btn').forEach(btn=>{
+        btn.addEventListener('click', e=>{
+          const url = btn.getAttribute('data-doc');
+          openDoc(url);
+        });
+      });
+
+      closeBtn.addEventListener('click', closeDoc);
+      modal.addEventListener('click', (e)=> { 
+        if (e.target === modal) closeDoc(); 
+      });
+
+      document.addEventListener('keydown', (e)=>{ 
+        if (e.key === 'Escape') closeDoc(); 
+      });
+    })();
+    
+  </script>
+    
+</body>
+</html>
